@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://lvpeng96.github.io</id>
     <title>Gridea</title>
-    <updated>2021-02-20T09:35:33.650Z</updated>
+    <updated>2021-02-20T10:19:00.788Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://lvpeng96.github.io"/>
     <link rel="self" href="https://lvpeng96.github.io/atom.xml"/>
@@ -11,37 +11,20 @@
     <icon>https://lvpeng96.github.io/favicon.ico</icon>
     <rights>All rights reserved 2021, Gridea</rights>
     <entry>
-        <title type="html"><![CDATA[Hello Gridea]]></title>
-        <id>https://lvpeng96.github.io/post/hello-gridea/</id>
-        <link href="https://lvpeng96.github.io/post/hello-gridea/">
+        <title type="html"><![CDATA[搭建博客]]></title>
+        <id>https://lvpeng96.github.io/post/da-jian-bo-ke/</id>
+        <link href="https://lvpeng96.github.io/post/da-jian-bo-ke/">
         </link>
-        <updated>2018-12-11T16:00:00.000Z</updated>
-        <summary type="html"><![CDATA[<p>👏  欢迎使用 <strong>Gridea</strong> ！<br>
-✍️  <strong>Gridea</strong> 一个静态博客写作客户端。你可以用它来记录你的生活、心情、知识、笔记、创意... ...<br>
-<img src="https://lvpeng96.github.io/post-images/1613811935118.png" alt="" loading="lazy"></p>
-]]></summary>
-        <content type="html"><![CDATA[<p>👏  欢迎使用 <strong>Gridea</strong> ！<br>
-✍️  <strong>Gridea</strong> 一个静态博客写作客户端。你可以用它来记录你的生活、心情、知识、笔记、创意... ...<br>
-<img src="https://lvpeng96.github.io/post-images/1613811935118.png" alt="" loading="lazy"></p>
-<!-- more -->
-<p><a href="https://github.com/getgridea/gridea">Github</a><br>
-<a href="https://gridea.dev/">Gridea 主页</a><br>
-<a href="http://fehey.com/">示例网站</a></p>
-<h2 id="特性">特性👇</h2>
-<p>📝  你可以使用最酷的 <strong>Markdown</strong> 语法，进行快速创作</p>
-<p>🌉  你可以给文章配上精美的封面图和在文章任意位置插入图片</p>
-<p>🏷️  你可以对文章进行标签分组</p>
-<p>📋  你可以自定义菜单，甚至可以创建外部链接菜单</p>
-<p>💻  你可以在 <strong>Windows</strong>，<strong>MacOS</strong> 或 <strong>Linux</strong> 设备上使用此客户端</p>
-<p>🌎  你可以使用 <strong>𝖦𝗂𝗍𝗁𝗎𝖻 𝖯𝖺𝗀𝖾𝗌</strong> 或 <strong>Coding Pages</strong> 向世界展示，未来将支持更多平台</p>
-<p>💬  你可以进行简单的配置，接入 <a href="https://github.com/gitalk/gitalk">Gitalk</a> 或 <a href="https://github.com/SukkaW/DisqusJS">DisqusJS</a> 评论系统</p>
-<p>🇬🇧  你可以使用<strong>中文简体</strong>或<strong>英语</strong></p>
-<p>🌁  你可以任意使用应用内默认主题或任意第三方主题，强大的主题自定义能力</p>
-<p>🖥  你可以自定义源文件夹，利用 OneDrive、百度网盘、iCloud、Dropbox 等进行多设备同步</p>
-<p>🌱 当然 <strong>Gridea</strong> 还很年轻，有很多不足，但请相信，它会不停向前 🏃</p>
-<p>未来，它一定会成为你离不开的伙伴</p>
-<p>尽情发挥你的才华吧！</p>
-<p>😘 Enjoy~</p>
+        <updated>2021-02-20T09:41:36.000Z</updated>
+        <content type="html"><![CDATA[<p>搭建博客的方法很多，但不得不说坑也很多。我以我自身经历讲述搭建博客时踩的坑，已经总结的经验。<br>
+一、阿里云服务<br>
+简述为：在阿里云购买ECS然后搭建好博客环境再通过IP与域名进行绑定即可，优点是在浏览器输入你自定义的网址（例如我的为“lvpengblog.top”)即可打开你的个人博客。逼格瞬间上升有没有？😏<br>
+然而实际操作下来结果却是这样的。先是购买了阿里云的ECS,然后一顿操作各种百度，Google，解决了一系列的问题，例如PHP环境搭建，Mysql建立数据库，WordPress的部署、域名的购买注册等等。当我通过ECS的IP地址做好了一切准备，可谓是只欠东风。然后<img src="https://lvpeng96.github.io/post-images/1613815286701.png" alt="" loading="lazy">😱。先帝创业未半，死于经费不足🙈🙈。<br>
+上述方法我参考的资料我以后会整理一下发出来，共经费充足的大佬使用。<br>
+二、自搭建服务器<br>
+既然阿里云你如此，就别怪我自己搭建了。简单科普了下，Frp内网穿透可以简单理解为将内网IP转换为公网IP，进而就可以在互联网上随时访问我的服务器不就实现了曲线救国。<br>
+搭建的方法差不同上，只不过是将阿里的服务器换成了一台笔记本电脑（在此感谢我对象小尚同学的大力支持）。同样的过程，再来一遍果然迅速了许多。搭建好后准备操作Frp内网穿透。然而事情原没有想象的顺利再次掉入坑里。<br>
+目前这种搭建方式算是比较靠谱的了。</p>
 ]]></content>
     </entry>
 </feed>
