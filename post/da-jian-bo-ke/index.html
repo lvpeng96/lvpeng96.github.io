@@ -5,14 +5,14 @@
     
 <meta charset="utf-8" >
 
-<title>搭建博客 | Gridea</title>
+<title>关于搭建博客 | Gridea</title>
 <meta name="description" content="温故而知新">
 
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
 
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-<link rel="shortcut icon" href="https://lvpeng96.github.io/favicon.ico?v=1613816338190">
+<link rel="shortcut icon" href="https://lvpeng96.github.io/favicon.ico?v=1613825202863">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
 <link rel="stylesheet" href="https://lvpeng96.github.io/styles/main.css">
 
@@ -30,7 +30,7 @@
   <div class="site-header">
     <div class="left">
       <a href="https://lvpeng96.github.io">
-        <img class="avatar" src="https://lvpeng96.github.io/images/avatar.png?v=1613816338190" alt="" width="32px" height="32px">
+        <img class="avatar" src="https://lvpeng96.github.io/images/avatar.png?v=1613825202863" alt="" width="32px" height="32px">
       </a>
       <a href="https://lvpeng96.github.io">
         <h1 class="site-title">Gridea</h1>
@@ -49,26 +49,20 @@
     <div class="menu-list">
       
         
-          <a href="/" class="menu purple-link">
+          <a href="https://lvpeng96.github.io/post/da-jian-bo-ke" class="menu purple-link">
             首页
           </a>
         
       
         
-          <a href="/archives" class="menu purple-link">
-            归档
-          </a>
-        
-      
-        
           <a href="/tags" class="menu purple-link">
-            标签
+            C
           </a>
         
       
         
           <a href="/post/about" class="menu purple-link">
-            关于
+            Linux
           </a>
         
       
@@ -80,21 +74,24 @@
       <div class="content-container">
         <div class="post-detail">
           
-          <h2 class="post-title">搭建博客</h2>
+          <h2 class="post-title">关于搭建博客</h2>
           <div class="post-info post-detail-info">
             <span><i class="icon-calendar-outline"></i> 2021-02-20</span>
             
           </div>
           <div class="post-content">
             <p>搭建博客的方法很多，但不得不说坑也很多。我以我自身经历讲述搭建博客时踩的坑，已经总结的经验。<br>
-一、阿里云服务<br>
+一、阿里云服务<!-- more --><br>
 简述为：在阿里云购买ECS然后搭建好博客环境再通过IP与域名进行绑定即可，优点是在浏览器输入你自定义的网址（例如我的为“lvpengblog.top”)即可打开你的个人博客。逼格瞬间上升有没有？😏<br>
-然而实际操作下来结果却是这样的。先是购买了阿里云的ECS,然后一顿操作各种百度，Google，解决了一系列的问题，例如PHP环境搭建，Mysql建立数据库，WordPress的部署、域名的购买注册等等。当我通过ECS的IP地址做好了一切准备，可谓是只欠东风。然后<img src="https://lvpeng96.github.io/post-images/1613815286701.png" alt="" loading="lazy">😱。先帝创业未半，死于经费不足🙈🙈。<br>
-上述方法我参考的资料我以后会整理一下发出来，共经费充足的大佬使用。<br>
-二、自搭建服务器<br>
-既然阿里云你如此，就别怪我自己搭建了。简单科普了下，Frp内网穿透可以简单理解为将内网IP转换为公网IP，进而就可以在互联网上随时访问我的服务器不就实现了曲线救国。<br>
-搭建的方法差不同上，只不过是将阿里的服务器换成了一台笔记本电脑（在此感谢我对象小尚同学的大力支持）。同样的过程，再来一遍果然迅速了许多。搭建好后准备操作Frp内网穿透。然而事情原没有想象的顺利再次掉入坑里。<br>
-目前这种搭建方式算是比较靠谱的了。</p>
+然而实际操作下来结果却是这样的。先是购买了阿里云的ECS,然后一顿操作各种百度，Google，解决了一系列的问题，例如PHP环境搭建，Mysql建立数据库，WordPress的部署、域名的购买注册等等。当我通过ECS的IP地址做好了一切准备，可谓是只欠东风。然后<img src="https://lvpeng96.github.io/post-images/1613823517102.png" alt="" loading="lazy">帝创业未半，死于经费不足🙈🙈。</p>
+<pre><code>    上述方法我参考的资料我以后会整理一下发出来，共经费充足的土豪使用。
+</code></pre>
+<p>二、自搭建服务器<!-- more --><br>
+简单科普了下，Frp内网穿透可以简单理解为将内网IP转换为公网IP，进而就可以在互联网上随时访问我的服务器不就实现了曲线救国。<br>
+搭建的方法差不同上，只不过是将阿里的服务器换成了一台笔记本电脑（在此感谢我对象小尚同学的大力支持）。同样的过程，再来一遍果然迅速了许多。搭建好后准备操作Frp内网穿透。然而事情原没有想象的顺利再次掉入坑里。一顿操作下来，Frp穿透也需要一个服务器主机。崩溃ing🤕</p>
+<p>三、基于Github搭建<br>
+这是最简单，最实用的一种搭建方式。唯一需要准备的就是梯子。直接使用Gridea客户端拥有很多模板可以使用，方便又实惠。这个项目作者Github链接放在下边了，请把Star点起来。<br>
+https://github.com/getgridea/gridea</p>
 
           </div>
         </div>

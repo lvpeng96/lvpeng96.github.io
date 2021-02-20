@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://lvpeng96.github.io</id>
     <title>Gridea</title>
-    <updated>2021-02-20T10:19:00.788Z</updated>
+    <updated>2021-02-20T12:46:58.855Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://lvpeng96.github.io"/>
     <link rel="self" href="https://lvpeng96.github.io/atom.xml"/>
@@ -11,20 +11,65 @@
     <icon>https://lvpeng96.github.io/favicon.ico</icon>
     <rights>All rights reserved 2021, Gridea</rights>
     <entry>
-        <title type="html"><![CDATA[搭建博客]]></title>
+        <title type="html"><![CDATA[Visual Studio Code]]></title>
+        <id>https://lvpeng96.github.io/post/visual-studio-code/</id>
+        <link href="https://lvpeng96.github.io/post/visual-studio-code/">
+        </link>
+        <updated>2021-02-20T12:44:30.000Z</updated>
+        <content type="html"><![CDATA[<p>必备插件<br>
+自己的操作习惯等备份</p>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Openwrt]]></title>
+        <id>https://lvpeng96.github.io/post/openwrt/</id>
+        <link href="https://lvpeng96.github.io/post/openwrt/">
+        </link>
+        <updated>2021-02-20T12:39:11.000Z</updated>
+        <content type="html"><![CDATA[<pre><code>一切一切的开始于我拥有了一个树莓派折腾折腾再折腾。期间组件过NAS、利用IO驱动过三色LED（彩虹的真好看啊）、做个家庭智能联网设备的终端。最后终于找到了他的归宿作为我现在使用的软路由，打开了新世界的大门。
+</code></pre>
+<p><em>现在他安静躺在弱电箱里，默默地为我提供优质的网络资源。</em></p>
+<p>2021.2.20 为他购置了新的外壳，原来的亚克力外壳已经碎了。这次换了个金属的外壳还有双风扇，不出意外软路由就是他的最终归宿了。</p>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[关于Linux]]></title>
+        <id>https://lvpeng96.github.io/post/guan-yu-linux/</id>
+        <link href="https://lvpeng96.github.io/post/guan-yu-linux/">
+        </link>
+        <updated>2021-02-20T12:33:42.000Z</updated>
+        <content type="html"><![CDATA[<p>Linux属于纯是因为感觉神秘或者说因为好奇心吧，自学了基本操作。安装卸载软件、编写文件、用户权限操作等还是没问题的。</p>
+<p>目前对于Linux学习需求还没有很强烈，属于一种食之无味弃之可惜的感觉，主要是因为没有对Linux没有全面系统的理解。Github上闲逛时若发现好的项目，例子或者感觉有用的东西放在这里作为收藏。</p>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[从C开始吧]]></title>
+        <id>https://lvpeng96.github.io/post/cong-c-kai-shi-ba/</id>
+        <link href="https://lvpeng96.github.io/post/cong-c-kai-shi-ba/">
+        </link>
+        <updated>2021-02-20T12:29:00.000Z</updated>
+        <content type="html"><![CDATA[<p>简介C语言作为我的主要编程语言从19年到现在已经快两年了，公司的项目主要做嵌入式软件。下班又沉迷游戏，导致这么长时间对C语言还未得其精髓。<br>
+此文章用于收录Github中好的C语言算法、例子、小应用等。</p>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[关于搭建博客]]></title>
         <id>https://lvpeng96.github.io/post/da-jian-bo-ke/</id>
         <link href="https://lvpeng96.github.io/post/da-jian-bo-ke/">
         </link>
         <updated>2021-02-20T09:41:36.000Z</updated>
         <content type="html"><![CDATA[<p>搭建博客的方法很多，但不得不说坑也很多。我以我自身经历讲述搭建博客时踩的坑，已经总结的经验。<br>
-一、阿里云服务<br>
+一、阿里云服务<!-- more --><br>
 简述为：在阿里云购买ECS然后搭建好博客环境再通过IP与域名进行绑定即可，优点是在浏览器输入你自定义的网址（例如我的为“lvpengblog.top”)即可打开你的个人博客。逼格瞬间上升有没有？😏<br>
-然而实际操作下来结果却是这样的。先是购买了阿里云的ECS,然后一顿操作各种百度，Google，解决了一系列的问题，例如PHP环境搭建，Mysql建立数据库，WordPress的部署、域名的购买注册等等。当我通过ECS的IP地址做好了一切准备，可谓是只欠东风。然后<img src="https://lvpeng96.github.io/post-images/1613815286701.png" alt="" loading="lazy">😱。先帝创业未半，死于经费不足🙈🙈。<br>
-上述方法我参考的资料我以后会整理一下发出来，共经费充足的大佬使用。<br>
-二、自搭建服务器<br>
-既然阿里云你如此，就别怪我自己搭建了。简单科普了下，Frp内网穿透可以简单理解为将内网IP转换为公网IP，进而就可以在互联网上随时访问我的服务器不就实现了曲线救国。<br>
-搭建的方法差不同上，只不过是将阿里的服务器换成了一台笔记本电脑（在此感谢我对象小尚同学的大力支持）。同样的过程，再来一遍果然迅速了许多。搭建好后准备操作Frp内网穿透。然而事情原没有想象的顺利再次掉入坑里。<br>
-目前这种搭建方式算是比较靠谱的了。</p>
+然而实际操作下来结果却是这样的。先是购买了阿里云的ECS,然后一顿操作各种百度，Google，解决了一系列的问题，例如PHP环境搭建，Mysql建立数据库，WordPress的部署、域名的购买注册等等。当我通过ECS的IP地址做好了一切准备，可谓是只欠东风。然后<img src="https://lvpeng96.github.io/post-images/1613823517102.png" alt="" loading="lazy">帝创业未半，死于经费不足🙈🙈。</p>
+<pre><code>    上述方法我参考的资料我以后会整理一下发出来，共经费充足的土豪使用。
+</code></pre>
+<p>二、自搭建服务器<!-- more --><br>
+简单科普了下，Frp内网穿透可以简单理解为将内网IP转换为公网IP，进而就可以在互联网上随时访问我的服务器不就实现了曲线救国。<br>
+搭建的方法差不同上，只不过是将阿里的服务器换成了一台笔记本电脑（在此感谢我对象小尚同学的大力支持）。同样的过程，再来一遍果然迅速了许多。搭建好后准备操作Frp内网穿透。然而事情原没有想象的顺利再次掉入坑里。一顿操作下来，Frp穿透也需要一个服务器主机。崩溃ing🤕</p>
+<p>三、基于Github搭建<br>
+这是最简单，最实用的一种搭建方式。唯一需要准备的就是梯子。直接使用Gridea客户端拥有很多模板可以使用，方便又实惠。这个项目作者Github链接放在下边了，请把Star点起来。<br>
+https://github.com/getgridea/gridea</p>
 ]]></content>
     </entry>
 </feed>
